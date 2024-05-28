@@ -579,61 +579,116 @@ Se vogliamo far evaporare un materiale, dobbiamo fornire un calore positivo: \(Q
 
 
 
-\subsection{Trasmissione del calore}
-Ci sono tre modi di trasmissione del calore, convenzionalmente: la conduzione, la convezione e l’irraggiamento.\\
+\subsection{Trasmissione del Calore}
+Ci sono tre modi convenzionali di trasmissione del calore: conduzione, convezione e irraggiamento.\\
 \\
-Se abbiamo un oggetto omogeneo e si determina una differenza di temperatura fra un punto dell’oggetto e un altro, c’è dell’energia che si muove da un punto all’altro. Se mettiamo in contatto una barra di metallo e una sorgente calda, otterrò che l’estremità della barra si scalda e il resto inizialmente rimane della stessa temperatura; poi però anche il resto del metallo si scalda. C’è del calore che si propaga nel solido. Questa si chiama \textbf{conduzione del calore}.\\
+Se un oggetto omogeneo presenta una differenza di temperatura tra due punti, si verifica un trasferimento di energia da una zona all'altra. Ad esempio, se mettiamo in contatto una barra di metallo con una sorgente calda, l'estremità della barra si scalda mentre il resto inizialmente rimane alla stessa temperatura; successivamente, anche il resto del metallo si scalda. Questo fenomeno è chiamato \textbf{conduzione del calore}.\\
 \\
-Otteniamo che la variazione infinitesimale di calore si ha come:
+La variazione infinitesimale di calore nella conduzione può essere espressa come:
 \[
-    dQ = -K\frac{dT}{dz}dS dt
+    dQ = -K\frac{dT}{dz}dS \, dt
 \]
-L’\textbf{irraggiamento} è un fenomeno che collega la temperatura del corpo e l’emissione e assorbimento di onde elettromagnetiche. Esiste una connessione tra l’energia che associo ad una temperatura e l’energia che associo ad una lunghezza d’onda:
+dove \( K \) è la conducibilità termica, \(\frac{dT}{dz}\) è il gradiente di temperatura, \( dS \) è l'area attraverso cui avviene la conduzione e \( dt \) è l'intervallo di tempo.\\
+\\
+L'\textbf{irraggiamento} è un fenomeno che lega la temperatura di un corpo all'emissione e all'assorbimento di onde elettromagnetiche. Esiste una connessione tra l'energia associata a una temperatura e l'energia associata a una lunghezza d'onda:
 \[
-    K_BT \simeq \frac{hc}{\lambda}
+    K_B T \simeq \frac{hc}{\lambda}
 \]
+dove \( K_B \) è la costante di Boltzmann, \( T \) è la temperatura, \( h \) è la costante di Planck, \( c \) è la velocità della luce e \( \lambda \) è la lunghezza d'onda
+
 \subsection{Gas}
-I \textbf{gas} sono un sistema di particelle debolmente interagenti fra di loro, descritti con quattro grandezze fondamentali: pressione, volume, temperatura e quantità di sostanza.\\
+I gas sono costituiti da particelle debolmente interagenti, e sono descritti da quattro grandezze fondamentali: pressione, volume, temperatura e quantità di sostanza.\\
 \\
-Per i nostri scopi, il \textbf{volume} di un gas coincide con quello del recipiente che lo contiene; il gas tende a riempire tutto il volume del contenitore; se dividessi a metà il volume del contenitore, avrei metà delle molecole che compongono il gas da una parte, metà dall’altra. Abbiamo come
-unità di misura una lunghezza alla terza potenza, \([L^3]\), e la misureremo in \(m^3\), o in litri (\(1000lt\) in \(1 m^3\)).\\
+Per i nostri scopi, il \textbf{volume} di un gas coincide con quello del recipiente che lo contiene; il gas tende a occupare tutto il volume del contenitore. Se dividessimo a metà il volume del contenitore, avremmo metà delle molecole del gas da una parte e metà dall'altra. Il volume ha come unità di misura una lunghezza alla terza potenza (\([L^3]\)), comunemente espressa in metri cubi (\(m^3\)) o litri (\(1000 \, \text{lt}\) in \(1 \, m^3\)).
+\newpage
+\noindent La \textbf{temperatura} può essere misurata in gradi Kelvin, Celsius o Fahrenheit.\\
 \\
-La \textbf{temperatura} si può misurare in gradi Kelvin, Celsius o Fahrenheit.
-\\
-La \textbf{pressione} la definiamo come la componente della forza ortogonale alla superficie, diviso la superficie stessa:
+La \textbf{pressione} è definita come la componente della forza ortogonale alla superficie, divisa per la superficie stessa:
 \[
     p = \frac{F_{\bot}}{S}
-\]
-Se aumenta la superficie di contatto a parità di forza applicata, la pressione applicata diminuisce. Cambiano le cose quando parliamo della pressione di un gas. Se ho del gas all’interno di un recipiente, le particelle che compongono il gas sono animate da movimenti casuali indipendenti l’uno dall’altro. Qualche volta queste particelle andranno ad urtare le pareti del recipiente. Quando vanno ad urtarle, siccome la massa dei costituenti del gas è molto minore della massa della parete 
-possiamo considerare l’urto come completamente elastico fra una particella di piccola massa m e una parete di massa infinita \(M (m << M)\)\\
+\] 
+dove \(F_{\bot}\) rappresenta la componente della forza ortogonale alla superficie e \(S\) è l'area della superficie.\\
 \\
-La pressione di un gas viene definita come l’inverso della pressione esercitata dal recipiente; non c’è altro modo di definirla sperimentalmente. Vale:
+Se aumenta l'area di contatto a parità di forza applicata, la pressione diminuisce. Questo principio cambia quando consideriamo la pressione di un gas. All'interno di un recipiente, le particelle di gas sono in movimento casuale e indipendente l'una dall'altra. Periodicamente, queste particelle urtano le pareti del recipiente. Poiché la massa delle particelle è molto inferiore rispetto a quella delle pareti (\( m << M \)), possiamo considerare questi urti come completamente elastici tra una particella di piccola massa \( m \) e una parete di massa infinita \( M \).\\
+\\
+La pressione di un gas è definita come l'opposto della pressione esercitata dal contenitore; non esiste altro modo di definirla sperimentalmente. Quindi:
 \[
     p_{gas} := -p_{contenitore}
 \]
-Prendiamo in considerazione un \textbf{pistone}, adagiato su un cilindro, all’interno del quale è disposto un gas. La pressione del gas sostanzialmente tenderà a spingere il pistone verso l’alto, e sarà uguale alla pressione del gas per la superficie del pistone per \^{z} versore:
+Consideriamo un \textbf{pistone} posto all'interno di un cilindro, all'interno del quale è presente un gas. La pressione del gas tende essenzialmente a spingere il pistone verso l'alto ed è uguale alla pressione del gas moltiplicata per l'area del pistone, con direzione lungo il versore \( \hat{z} \):
 \[
     \Vec{F} = p_{\text{gas}} S_{\text{pistone}} \hat{z}
 \]
 Passiamo ora alle leggi fondamentali dei gas. Mi concentro sul caso dei gas ideali, o gas perfetti; per ora ci basta sapere che sono un’eccellente approssimazione per i gas a bassa pressione (rarefatti, a bassa densità). Valgono quattro leggi importanti:
 \begin{enumerate}
-    \item la pressione aumenta linearmente con la temperatura: \(p = p0(1+\beta t)\), dove \(t\) è la temperatura misurata in una qualunque delle tre scale. Questa è la legge di Gay-Lussac, e vale qualora riusciamo a mantenere il volume costante durante le nostre trasformazioni. Nella scala temperatura-pressione abbiamo una retta di coefficiente angolare \(\beta\), che incontra l’asse delle ordinate in p0; mi raccomando, vale a volume costante. Questa rientra fra le trasformazioni dette isocore. I valori \(p_0\) e \(\beta\) dipendono dal gas
-    \item seconda legge di Gay-Lussac. Teniamo la pressione costante, abbiamo una trasformazione isobara, e consideriamo un diagramma temperatura-volume. Otteniamo che il volume varia secondo \(V = V_0(1+\alpha t)\); cambiamo \((V_0, \alpha)\) e sostanzialmente stiamo cambiando gas. Otteniamo anche qui delle rette simili a quelle della proprietà precedente
-    \item Vediamo la \textbf{legge di Boyle}. Se manteniamo la temperatura costante, in una trasformazione isoterma, vale: \(p_iV_i = p_fV_f = cost =\propto T\). Se mappiamo volume e temperatura, vale che se scegliamo una temperatura, la pressione giace su un’iperbole \(p = \frac{cost}{V} \)
-    \item Legge di \textbf{Avogadro}. Il numero di costituenti di un gas, fissati il volume, pressione e temperatura, è proporzionale a pressione e volume, e inversamente proporzionale alla temperatura: \(N = \frac{1}{K_B}  \frac{pV}{T} \) ; viene moltiplicata per la costante di Boltzmann: \(KB = 1, 38\text{×}10^{-23} JK\)
+    \item \textbf{Legge di Gay-Lussac sulla pressione e la temperatura}: Se manteniamo costante il volume durante le trasformazioni, la pressione aumenta linearmente con la temperatura secondo l'equazione \(p = p_0(1+\beta t)\), dove \(t\) è la temperatura misurata su una delle tre scale disponibili. Questa legge, che rientra nelle trasformazioni isocore, descrive una relazione lineare tra pressione e temperatura con un coefficiente angolare \(\beta\), incontrando l'asse delle ordinate in \(p_0\). I valori di \(p_0\) e \(\beta\) dipendono dal gas considerato.
+    \item \textbf{Seconda legge di Gay-Lussac}: Se manteniamo la pressione costante, otteniamo una trasformazione isobara. In questo caso, il volume varia secondo l'equazione \(V = V_0(1+\alpha t)\), dove \((V_0, \alpha)\) sono specifici per ogni gas. Anche qui, otteniamo delle relazioni lineari simili alla legge precedente quando rappresentiamo il diagramma temperatura-volume.
+    \item  \textbf{Legge di Boyle}: Se manteniamo costante la temperatura, in una trasformazione isoterma, la pressione e il volume del gas sono inversamente proporzionali, come espressa dall'equazione \(p_iV_i = p_fV_f = \text{costante} \propto T\). Rappresentando questa legge su un diagramma volume-pressione, otteniamo un'iperbole.
+    \item \textbf{Legge di Avogadro}: Questa legge stabilisce che, mantenendo costanti il volume, la pressione e la temperatura di un gas, il numero di molecole del gas è direttamente proporzionale al prodotto della pressione e del volume, e inversamente proporzionale alla temperatura. Matematicamente, si esprime come \(N = \frac{1}{K_B} \frac{pV}{T}\), dove \(K_B\) è la costante di Boltzmann con valore \(1,38 \times 10^{-23} \, J/K\).
 \end{enumerate}
-Se considero invece il numero di moli come numero totale di molecole diviso il numero di Avogadro, ottengo:
+Se consideriamo il numero di moli come il rapporto tra il numero di costituenti del gas e il numero di Avogadro, otteniamo:
 \[
     n = \frac{N}{N_A} = \frac{pV}{N_AK_BT}
 \]
 \subsection{Teoria cinetica dei gas}
+//\textit{TODO}
 \subsection{Espansione libera di un gas}
+//\textit{TODO}
 \subsection{Trasformazioni notevoli}
+//\textit{TODO}
 \subsection{Trasformazioni cicliche}
+//\textit{TODO}
 \subsection{Ciclo di Carnot}
+//\textit{TODO}
 \subsection{Secondo principio della termodinamica}
+//\textit{TODO}
 \newpage
 \section{Entropia}
+//\textit{TODO}
+\newpage
 \section{Tutte le formule}
+\subsection{Equazioni}
+\begin{itemize}
+    \item \(pV = nRT\): Equazione di stato dei gas ideali, dove \(p\) è la pressione, \(V\) è il volume, \(n\) è il numero di moli, \(R\) è la costante dei gas e \(T\) è la temperatura assoluta.
+    \item \(\Delta U = Q - W\): Primo principio della termodinamica, dove \(\Delta U\) è la variazione dell'energia interna di un sistema, \(Q\) è il calore fornito al sistema e \(W\) è il lavoro compiuto dal sistema.
+    \item \( \Vec{F} = m \Vec{a}\): Legge fondamentale della dinamica, che esprime la relazione tra la forza \(\vec{F}\) applicata su un oggetto di massa \(m\) e l'accelerazione \(\vec{a}\) che essa produce.
+    \item \(\Vec{F} = -G \frac{m_1m_2}{d^2} \hat{r}\): Legge di gravitazione universale di Newton, che descrive la forza attrattiva tra due corpi di masse \(m_1\) e \(m_2\) separati da una distanza \(d\) e diretta lungo la linea congiungente i due corpi.
+    \item \(U = n c_V T\): Relazione tra l'energia interna \(U\), il numero di moli \(n\), il calore specifico a volume costante \(c_V\) e la temperatura \(T\) di un sistema.
+    \item \(\Vec{F}_{1\rightarrow 2}   = - \Vec{F}_{2\rightarrow 1}\): Principio di azione e reazione, che afferma che la forza esercitata da un corpo su un altro è uguale e opposta alla forza che il secondo corpo esercita sul primo.
+    \item \( \frac{d^2 \theta}{dt^2} + \omega ^ 2\theta = 0\): Equazione del moto armonico semplice, che descrive il moto di un oscillatore armonico con frequenza angolare \(\omega\).
+    \item \( U = \frac{l}{2}K_BT\): Energia interna \(U\) di un gas monoatomico ideale, dove \(l\) è il numero di gradi di libertà del gas e \(K_B\) è la costante di Boltzmann.
+    \item \( \Delta E = W_{N.C}\): Lavoro non conservativo compiuto su un sistema, che causa una variazione nell'energia del sistema.
+    \item \( \eta_{*}(T_1,T_2) \leq \eta _R (T_1,T_2 \): L'efficienza di un processo reversibile \(\eta_R\) è maggiore o uguale all'efficienza di qualsiasi processo non reversibile \(\eta_*\).
+    \item \(S = K_B \text{ln}(\eta_{comp})\): Entropia \(S\) di un sistema, espressa in termini di entropia di una trasformazione irreversibile \(\eta_{comp}\) tramite il logaritmo naturale e la costante di Boltzmann \(K_B\).
+    \item \( W_{i \to f}^{(ext)} = E_{k,f} - E{k,i} \rightarrow -\Delta U = \Delta E_k\): Lavoro compiuto dall'esterno su un sistema per portarlo da uno stato iniziale \(i\) a uno stato finale \(f\) è uguale alla variazione dell'energia cinetica del sistema. Questo implica che la variazione dell'energia interna di un sistema è uguale alla variazione dell'energia cinetica.
+    \item \( W_{A \to B} := \int_{A}^{B} \Vec{F} \cdot d \Vec{s} = -(U_B - U_A)\): Lavoro compiuto da una forza lungo un percorso \(A\) a \(B\) è uguale alla differenza di energia potenziale tra i due punti.
+     \item \( \vec{F} = - \frac{d\vec{U}}{d\vec{x}} = - \nabla U\): Relazione tra la forza \(\vec{F}\) e l'energia potenziale \(U\) in un campo scalare, dove \(\nabla\) è l'operatore nabla.
+\end{itemize}
+\subsection{Definizioni}
+\begin{itemize}
+    \item \(E_k = \frac{1}{2}m \Vec{v}^2\): Energia cinetica di un corpo di massa \(m\) che si muove con velocità \(\vec{v}\).
+    \item 
+    \[
+        \begin{cases}
+            dW = \Vec{F} \cdot d \Vec{s} \\
+            W_{A \rightarrow B}= \int_{A}^{B} \Vec{F} \cdot d \Vec{S}
+        \end{cases}
+    \]Lavoro eseguito da una forza \(\vec{F}\) lungo un percorso \(d\vec{s}\) e lavoro totale lungo un percorso \(A\) a \(B\).
+    \item \(\Vec{p} = m \Vec{v}\): Momento di un oggetto di massa \(m\) che si muove con velocità \(\vec{v}\).
+    \item \(\Delta S_{A \rightarrow B} = \int_{A rev}^{B}\frac{dQ}{T}\): Variazione dell'entropia in una trasformazione reversibile da \(A\) a \(B\), dove \(dQ\) è la quantità infinitesima di calore scambiata e \(T\) è la temperatura.
+    \item \(W = \int p \, dV\): Lavoro compiuto da una forza costante \(p\) durante una variazione infinitesima del volume \(dV\).
+    \item \(\Vec{X}_{CM} = \frac{\sum_{i}m_i\Vec{X}_i}{\sum_{i}m_i}\): Posizione del centro di massa di un sistema di massa \(m_i\) e posizione \(\vec{X}_i\) per ogni componente.
+    \item \(E := E_K + E_p\): Energia totale di un sistema, somma dell'energia cinetica \(E_K\) e dell'energia potenziale \(E_p\).
+\end{itemize}
+\subsection{Costanti}
+\begin{itemize}
+    \item  \(K_B = 1,38 \text{x} 10 ^ {-23} \frac{J}{K}\): Costante di Boltzmann. È utilizzata nelle espressioni che coinvolgono la teoria cinetica dei gas e descrive la relazione tra l'energia termica di un sistema e la temperatura.
+    \item \( N_A = 6,023 \text{x} 10 ^ {23} \): Numero di Avogadro. Rappresenta il numero di atomi o molecole in una mole di sostanza e viene utilizzato per convertire tra quantità macroscopiche e quantità microscopiche di sostanze chimiche.
+    \item \( G = 6,67 \text{x} 10 ^ {-11} \frac{N \cdot m^2}{Kg^2}\): Costante di gravitazione universale. Questa costante appare nell'equazione di Newton per la legge di gravitazione universale, che descrive l'attrazione gravitazionale tra due corpi.
+    \item \( c = 3 \textbf{x} 10 ^ 8 \frac{m}{s}\): Velocità della luce nel vuoto. Questa costante rappresenta la velocità massima a cui può propagarsi qualsiasi forma di energia nel vuoto, ed è una delle costanti fondamentali della fisica.
+    \item \( \frac{h}{\lambda} \simeq K_BT\), dove \(h = \frac{h}{2 \pi} = 1,055 \text{x} 10 ^ {-33} J \cdot s\): Relazione tra la costante di Planck, la lunghezza d'onda e la temperatura. Questa relazione quantifica il principio fondamentale della meccanica quantistica che lega l'energia di un fotone alla sua frequenza (o lunghezza d'onda) e alla temperatura del sistema.
+\end{itemize}
+\newpage
 \section{Esercizi Tipo}
+//\textit{TODO}
 \end{document}
