@@ -1,4 +1,4 @@
-\documentclass{article}
+    \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{titling}
 \usepackage{enumitem} % Per personalizzare elenchi puntati
@@ -689,6 +689,164 @@ Se consideriamo il numero di moli come il rapporto tra il numero di costituenti 
     \item \( \frac{h}{\lambda} \simeq K_BT\), dove \(h = \frac{h}{2 \pi} = 1,055 \text{x} 10 ^ {-33} J \cdot s\): Relazione tra la costante di Planck, la lunghezza d'onda e la temperatura. Questa relazione quantifica il principio fondamentale della meccanica quantistica che lega l'energia di un fotone alla sua frequenza (o lunghezza d'onda) e alla temperatura del sistema.
 \end{itemize}
 \newpage
-\section{Esercizi Tipo}
-//\textit{TODO}
+\section{Esercizi}
+\subsection{Moto parabolico + pendolo}
+Problema:\\
+Una lancia di massa 4,8 kg viene lanciata con una velocità di modulo 200 m/s e angolo di 30 gradi rispetto l'orizzontale. Nel punto di massima elevazione questa urta anelasticamente un pendolo balistica di massa M. La massima elevazione del pendolo rispetto il punto di riposo è 8,5 m. Trovare M.\\
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Immagini/parabolicoependolo.png}
+\end{figure}
+\\
+Soluzione:
+\begin{enumerate}
+    \item Calcolo della velocità orizzontale della lancia:
+    \[ v_{0x} = v_0 \cos(\theta) \]
+    \[ v_{0x} = 200 \cos(30^\circ) \]
+    \[ v_{0x} \approx 173.2 \, \text{m/s} \]
+    
+    \item Conservazione della quantità di moto:
+    \[ m_l v_{0x} = (m_l + M_p) v_f \]
+    
+    \item Calcolo della velocità finale combinata \( v_f \):
+    \[ \frac{1}{2} (m_l + M_p) v_f^2 = (m_l + M_p) g h \]
+    \[ \frac{1}{2} v_f^2 = g h \]
+    \[ v_f = \sqrt{2 g h} \]
+    \[ v_f \approx 12.9 \, \text{m/s} \]
+     
+    \item Soluzione per la massa del pendolo \( M_p \):
+    \[ m_l v_{0x} = (m_l + M_p) v_f \]
+    \[ 4.8 \cdot 173.2 = (4.8 + M_p) \cdot 12.9 \]
+    \[ M_p \approx 59.7 \, \text{kg} \]
+\end{enumerate}
+
+\noindent Risultato:
+\[ M_p \approx 59.7 \, \text{kg} \]
+\subsection{I 2 treni}
+Problema:\\
+Due treni viaggiano, sulla stessa linea ferroviaria e nello stesso verso, con velocità costante v1 = 78km/h e v2 = 120km/h partendo da due stazioni distanti tra loro 200 km. Il treno 1 parte, più avanti, è quello più lento. Il treno 1 parte dalla stazione 1,2h dopo il treno 2 che segue. Dopo che i treni sono partiti si incrociano a tempo t. Trovare t. \\
+\\
+Soluzione:
+\begin{enumerate}
+    \item Condizione di incontro:
+    \[ x_1(t) = x_2(t) \]
+    Distanza percorsa dal treno 1 più la distanza iniziale:
+    \[ 56 \, \text{km} + v_1 t = v_2 t \]
+    \item Sostituzione dei valori e risoluzione per \( t \):
+    \[ 56 + 78t = 120t \]
+    \[ 56 = 42t \]
+    \[ t = 1.33 \, \text{h} \]
+\end{enumerate}
+
+\noindent Risultato:
+I treni si incontrano 1,33 ore dopo la partenza del treno 1.
+\newpage
+\subsection{Carrucola su piano inclinato senza attrito}
+Problema:\\
+Su un piano inclinato di angolo 29.42° si trova un corpo di massa m2 = 49.95kg. Tramite una fune inestensibile e una carrucola perfetta il precedente corpo e collegato a un corpo di massa m1 che si trova in caduta libera verso il suo ad altezza di 39.53m e toccherà terra dopo 4.2 secondi. Trovare m1.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Immagini/pianoinclinatocarrucola.png}
+\end{figure}
+
+Soluzione:
+\begin{enumerate}
+    \item Calcolo dell'accelerazione \( a \) usando il tempo di caduta:
+    \[ s = s_0 + v_0t + \frac{1}{2}at^2 \]
+    \[ a = \frac{2h}{t^2} \]
+    \[ a = \frac{2 \cdot 39.53}{4.2^2} \]
+    \[ a \approx 4.48 \, \text{m/s}^2 \]
+    \item Equazioni di Newton per il sistema:
+    
+    Per il corpo in caduta libera \( m_1 \):
+    
+    \[ m_1 g - T = m_1 a \]
+    
+    Per il corpo sul piano inclinato \( m_2 \):
+    
+    \[ T - m_2 g \sin(\theta) - \mu_k m_2 g \cos(\theta) = m_2 a \]
+    \item Risoluzione del sistema di equazioni:
+    \[ m_1 g - m_1 a = m_2 a + m_2 g \sin(\theta) + \mu_k m_2 g \cos(\theta) \]
+    \item Espressione di \( m_1 \):
+    \[ m_1 = \frac{m_2 (a + g \sin(\theta) + \mu_k g \cos(\theta))}{g - a} \]
+    \item Sostituzione dei valori numerici (senza coefficiente di attrito \( \mu_k \) considerato):
+    
+    \[ m_1 = \frac{49.95 (4.48 + 9.8 \sin(29.42^\circ))}{9.8 - 4.48} \]
+    \[ \sin(29.42^\circ) \approx 0.491 \]
+    \[ m_1 = \frac{49.95 (4.48 + 9.8 \cdot 0.491)}{5.32} \]
+    \[ m_1 \approx 87.21 \, \text{kg} \]
+\end{enumerate}
+
+\noindent Risultato:\\
+La massa del corpo \( m_1 \) è approssimativamente \( 87.21 \, \text{kg} \).
+\subsection{Proiettile atterra su piano inclinato}
+Problema:\\
+Un proiettile viene sparato vero l'alto con angolo di alzo 23° misurato rispetto l'orizzontale e velocità iniziale v0. Dopo un tempo di 38s il proiettile incontra il piano inclinato di angolo 38° nel punto A. Trovare v0.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Immagini/proiettinenelpiano.png}
+\end{figure}
+
+Soluzione:
+\begin{enumerate}
+    \item Calcolo rapporto tra X e Y 
+    \[
+        \begin{cases}
+            X = cos \theta_2 \cdot d \\
+            Y = sin \theta_2 \cdot d
+        \end{cases}
+    \]
+    dove d rappresenta la distanza dal punto iniziale al punto A
+    \[Y = X \cdot tan \theta_2\]
+    \item Utilizzo questo rapporto sulla legge oraria del moto parabolico.
+    \[v_0 cos(\theta_1) \cdot t \cdot tan \theta_2 = v_0 sin(\theta_1) \cdot - \frac{1}{2}gt^2\]
+    \[v_0 = \frac{gt}{2(cos \theta_1 tan \theta_2 - sin \theta_1)}\]
+    \[v_0 = \frac{372,78}{0,2648}\]
+    \[v_0 \approx 1.47 \times 10^3 \, \text{m/s}\]
+\end{enumerate}
+
+\noindent Risultato:\\
+La velocità iniziale \( v_0 \) del proiettile è approssimativamente \( 1.47 \times 10^3 \, \text{m/s} \).
+\subsection{Massa sposta massa con carrucola e si toccano}
+Problema:\\
+Si consideri il sistema in figura. Siano M = 65 kg e m = 77 kg e a l'accelerazione del sistema. Trovare a.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Immagini/massaspostamassacarrucola.png}
+\end{figure}
+
+\noindent Soluzione:
+\begin{enumerate}
+    \item Equazioni dei sistema\\
+    Blocco m:
+    \[ m \cdot a = m \cdot g - T\]
+    Blocco M:
+    \[ (M + m)  a = T\]
+    //\textit{\((M + m)\) perché i due blocchi si toccano, se non lo facessero allora \(M\).}
+    \item Sistema di equazioni
+    \[mg - ma = (M + m)a\]
+    \[ a = \frac{mg}{M + 2m}\]
+    \[ a = \frac{755,37}{223}\]
+    \[a \approx 3,39 m/s^2\]
+\end{enumerate}
+
+\noindent Risultato:\\
+L'accelerazione \(a\) del sistema è \(3,39 m/s^2\)
+\subsection{Appeso a due molle}
+Problema:\\
+Un corpo di massa m trascurabile è appeso con due molle di lunghezza a riposo nulla e costante elastica k. Al corpo viene applicata una forza di 99N diretta verso il basso. Nella condizione di equilibrio le molle individuano tra esse un angolo di 38° e si allungano di 12 m. Trovare k.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Immagini/appesotraduemolle.png}
+\end{figure}
+
+\noindent Soluzione:
+\begin{enumerate}
+    \item a
+\end{enumerate}
+
+\noindent Risultato:\\
+a
+
+
 \end{document}
