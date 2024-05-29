@@ -842,11 +842,75 @@ Un corpo di massa m trascurabile è appeso con due molle di lunghezza a riposo n
 
 \noindent Soluzione:
 \begin{enumerate}
-    \item a
+    \item Cerco la F Perpendicolare delle molle
+    \[ F_\perp = F_{e1} \cdot cos \theta_1\]
+    dove
+    \[\theta = \theta_1 + \theta_2\]
+    \item Metto in relazione le forze che spingono in basso con quelle opposte
+    \[F + F_p = F_{\perp1} + F_{\perp2}\]
+    essendo la forza peso trascurabile da testo allora
+    \[2(k\cdot \Delta x \cdot cos\theta_1) = F\]
+    \[k = \frac{F}{2(\Delta x \cdot cos\theta_1)}\]
+    \[k =  \frac{99}{22,8}\]
+    \[k \approx 4,34 \text{N/m}\]
 \end{enumerate}
 
 \noindent Risultato:\\
-a
+La costante \(k\) delle molle misura \(4,34 \text{N/m}\)
+\newpage
+\subsection{Oggetto scivola dopo piano inclinato}
+Problema:\\
+Un corpo di massa m fermo inizia a scivolare su un piano inclinato alto 51 m. Alla base del piano, il corpo inizia a muoversi su un piano orizzontale con coefficiente di attrito dinamico di 0.55 e si ferma dopo l metri. Trovare \(\Delta\)l
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Immagini/oggettoscivolapianoinclinatoesiferma.png}
+\end{figure}
 
+\noindent Soluzione:
+\begin{enumerate}
+    \item Utilizzo la conservazione dell'energia per trova la velocità iniziale
+    \[U_0 = K\]
+    \[mgh = \frac{1}{2}mv^2\]
+    \[ v = \sqrt{2gh}\]
+    \item Cerco le forze che vengono applicate all'oggetto
+    \[ F = F_a = F_p\cdot \mu_d\]
+    \[ ma = mg\cdot \mu_d\]
+    \[ a = g\cdot \mu_d\]
+    \item Trovo lo spazio percorso dalla decelerazione
+    \[ s=\frac{V_0^2}{2a}\]
+    \[ s = \frac{2gh}{2g\cdot \mu_d}\]
+    \[ s = \frac{h}{\mu_d}\]
+    \[ s \approx 92,72 \text{m}\]
+\end{enumerate}
 
+\noindent Risultato:\\
+L'oggetto si ferma dopo 92,72 m
+\newpage
+\subsection{Proiettile che sposta costante}
+Problema:\\
+Su Titano (gTitano = \(1.352 m/s^2\) l'esercito di Thanos spara ad Hulk di massa 680 kg una raffica di proiettili di massa 3,4 kg e velocità 26 m/s con frequenza di 8.8 Hz. I proiettili non scalfiscono la dura pelle di Hulk e tornano indietro, ma fanno scivolare indietro l'uomo verde a velocità costante. Il coefficiente d'attrito dinamico tra i piedi di Hulk e la superficie di Titano è \(\mu_d\). Trovare \(\mu_d\).
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Immagini/Hulkscivola.png}
+\end{figure}
+
+\noindent Soluzione:
+\begin{enumerate}
+    \item Trovo il periodo dei proiettili
+    \[T = \frac{1}{f}\]
+    \item Metto in relazione le forze su Hulk
+    \[ F_a = F_{proiettile}\]
+    \item Trovo la forza del proiettile\\
+    Essendo che la risultante delle forze è 0 applicato il Principio di conversazione del moto
+    \[m_{p}v_p = - m_pv_p\]
+    \[2m_pv_p = 0\]
+    \[F_{proiettile} = \frac{2m_pv_p}{T}\]
+    \item Risolvo l'equazione per \(\mu\)
+    \[m_H \cdot g_T \cdot \mu_d = \frac{2m_pv_p}{T}\]
+    \[\mu_d = \frac{2m_pv_p}{T \cdot m_H \dot g_T}\]
+    \[\mu_d \approx 1.69\]
+\end{enumerate}
+
+\noindent Risultato:\\
+L'attrito tra Hulk e la superficie di Titano è 1,74.
 \end{document}
