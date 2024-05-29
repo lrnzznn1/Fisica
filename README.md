@@ -4,7 +4,7 @@ Benvenuti nel progetto **Riassunto di Fisica in LaTeX**! Questo repository conti
 
 ## Indice del Contenuto
 
-1. [Cinematica](#cinematica)
+1. Cinematica
     - Equazione del moto
     - Velocità
     - Accelerazione
@@ -14,7 +14,7 @@ Benvenuti nel progetto **Riassunto di Fisica in LaTeX**! Questo repository conti
         - Moto Circolare Uniformemente Accelerato
     - Moto Armonico
     - Periodo di un Pendolo
-2. [Dinamica](#dinamica)
+2. Dinamica
     - Primo Principio (Principio d'Inerzia)
     - Secondo Principio (Legge Fondamentale)
     - Terzo Principio (Principio di Azione e Reazione)
@@ -48,7 +48,7 @@ Benvenuti nel progetto **Riassunto di Fisica in LaTeX**! Questo repository conti
         - Momento Angolare
         - Momento d'Inerzia
         - Teorema degli Assi Paralleli (Huygens - Steiner)
-3. [Termodinamica](#termodinamica)
+3. Termodinamica
     - Numero di Avogadro
     - Energia Termica
     - Principio Zero
@@ -62,12 +62,12 @@ Benvenuti nel progetto **Riassunto di Fisica in LaTeX**! Questo repository conti
     - Trasformazioni Cicliche
     - Ciclo di Carnot
     - Secondo Principio della Termodinamica
-4. [Entropia](#entropia)
-5. [Tutte le Formule](#tutte-le-formule)
+4. Entropia
+5. Tutte le Formule
     - Equazioni
     - Definizioni
     - Costanti
-6. [Esercizi](#esercizi)
+6. Esercizi
     - Moto Parabolico + Pendolo
     - I 2 Treni
     - Carrucola su Piano Inclinato Senza Attrito
