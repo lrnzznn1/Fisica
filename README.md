@@ -100,24 +100,6 @@ Per compilare il documento LaTeX e generare il PDF del riassunto, eseguire il co
 pdflatex main.tex
 ```
 
-## Contribuire
-
-Le contribuzioni sono benvenute! Seguire questi passaggi per contribuire al progetto:
-
-1. Fork del repository
-2. Creare un nuovo branch per la feature o la correzione:
-    ```bash
-    git checkout -b nome-branch
-    ```
-3. Apportare le modifiche necessarie e committarle:
-    ```bash
-    git commit -m "Descrizione delle modifiche"
-    ```
-4. Push del branch al vostro fork:
-    ```bash
-    git push origin nome-branch
-    ```
-5. Creare una Pull Request descrivendo le modifiche apportate
    
 ## Contatti
 
