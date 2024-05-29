@@ -1,6 +1,6 @@
 # Riassunto di Fisica in LaTeX
 
-Benvenuti nel progetto **Riassunto di Fisica in LaTeX**! Questo repository contiene un riassunto dettagliato degli argomenti principali di fisica, formattato utilizzando LaTeX per una presentazione professionale e pulita. Di seguito troverete tutte le informazioni necessarie per comprendere, contribuire e utilizzare questo progetto.
+Benvenuti nel progetto **Riassunto di Fisica in LaTeX**! Questo repository contiene un riassunto dettagliato degli argomenti principali di fisica, formattato utilizzando LaTeX per una presentazione professionale e pulita. Di seguito troverete tutte le informazioni necessarie per comprendere e utilizzare questo progetto.
 
 ## Indice del Contenuto
 
